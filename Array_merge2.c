@@ -20,8 +20,11 @@ void merge(int a1[], int n, int a2[], int m) {
 
     while(j >= 0)
         a1[k--] = a2[j--];
+    
+    while(i >= 0)
+        a1[k--] = a1[i--];
 }
-
+//void merge_no_duplicates()
 int main() {
     int n, m;
 
@@ -54,3 +57,4 @@ int main() {
     free(a1);
     free(a2);
 }
+
